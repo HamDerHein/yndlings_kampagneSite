@@ -46,21 +46,23 @@ body {
 .tekstBox1 {
     width: 90%;
     height: 300px;
-    margin: -90px auto;
+    margin: -134px auto;
     padding: 2em 1em 2em 1em;
 
 }
 
 .box2 {
-    width: 80%;
-    height: 30vh;
-    border-style: dashed;
+    margin-top: -20px;
+    width: 90%;
+    margin: -90px auto;
+    height: 100%;
 }
 
 .tekstBox2 {
-    width: 80%;
-    height: 15vh;
-    border-style: dashed;
+    width: 90%;
+    height: 300px;
+    margin: 62px auto;
+    padding: 2em 1em 2em 1em;
 }
 
 .box3 {
@@ -155,6 +157,14 @@ span {
     height: 300px;
     margin: 64px auto;
     padding: 2em 1em 2em 1em;
+    border: none;
+}
+
+.box2 iframe {
+    width: 100%;
+    height: 300px;
+    margin: -35px auto;
+    padding: 2em 1em 2em 0em;
     border: none;
 }
 
@@ -272,6 +282,12 @@ span {
         color: #00B9EA;
     }
 
+    .sliderContainer {
+
+        border-style: dashed;
+        width: 400px;
+        padding-top: 150px;
+    }
 }
 
-/**** TABLET MODE SLUT ****/
+/**** DESKTOP MODE SLUT ****/
