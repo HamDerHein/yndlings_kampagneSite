@@ -1,18 +1,25 @@
 body {
     margin: 0;
+    background-color: #D5EDFA;
+    min-width: 300px;
 }
+
 
 .navigation {
     width: 100%;
-    height: 20vh;
-    background-color: blue;
+    height: 70px;
+    background-color: #F2F2F2;
+    position: fixed;
 
+}
+
+.buttonContainer {
+    visibility: hidden;
 }
 
 .splash {
     width: 100vw;
     height: 100vh;
-    background-color: red;
     z-index: -1;
 }
 
@@ -27,21 +34,20 @@ body {
 
 .footer {
     width: 100%;
-    height: 20vh;
-    background-color: yellow;
+    height: 100px;
+    background-color: #052951;
 }
 
 .box1 {
-    width: 80%;
-    height: 30vh;
-    border-style: ridge;
-
+    width: 90%;
+    height: 100%;
 }
 
 .tekstBox1 {
-    width: 80%;
-    height: 15vh;
-    border-style: dashed;
+    width: 90%;
+    height: 300px;
+    margin: -90px auto;
+    padding: 2em 1em 2em 1em;
 
 }
 
@@ -69,29 +75,174 @@ body {
     border-style: dashed;
 }
 
+.navLogo {
+    width: 150px;
+    position: relative;
+    top: 14px;
+    left: 17px;
+    z-index: 3;
+}
 
+.middleLogo {
+    width: 90vw;
+
+}
+
+/**** BURGERMENU START ****/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #052951;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #00B9EA;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+span {
+    margin-left: 90%;
+    position: relative;
+    top: -32px;
+}
+
+
+/**** BURGERMENU SLUT ****/
+
+/**** YOUTUBEVIDEOER START ****/
+
+.box1 iframe {
+
+    width: 100%;
+    height: 300px;
+    margin: 64px auto;
+    padding: 2em 1em 2em 1em;
+    border: none;
+}
+
+
+/**** YOUTUBEVIDEOER START ****/
 
 /**** TABLET MODE START ****/
 
 @media screen and (min-width:768px) {
 
-    .navigation .burger {
+    span {
 
         visibility: hidden;
     }
 
     .buttonContainer {
         visibility: visible;
+        margin: 0 auto;
+        margin-top: -78px;
+        text-align: right;
+
+    }
+
+    .buttonContainer a {
+        background-color: #F2F2F2;
+        border: none;
+        color: #052951;
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        position: relative;
+        z-index: 2;
+        top: 5px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .buttonContainer a:hover {
+        color: #00B9EA;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .tekstBox1 {
+        width: 90%;
+        height: 300px;
+        margin: 140px auto;
+        padding: 2em 1em 2em 1em;
+
+    }
+
+}
+
+/**** TABLET MODE STOP ****/
+
+/**** DESKTOP MODE START ****/
+
+@media screen and (min-width:1024px) {
+
+    span {
+
+        visibility: hidden;
+    }
+
+    .buttonContainer {
+        visibility: visible;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-top: -87px;
     }
 
     .navigation {
         position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+
     }
 
     nav a {
         background-color: #8a7f7f;
         border: none;
-        color: white;
+        color: #052951;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -102,9 +253,9 @@ body {
 
 
     .buttonContainer a {
-        background-color: #8a7f7f;
+        background-color: #F2F2F2;
         border: none;
-        color: white;
+        color: #052951;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -117,57 +268,10 @@ body {
         cursor: pointer;
     }
 
+    .buttonContainer a:hover {
+        color: #00B9EA;
+    }
 
 }
 
-/**** BURGERMENU START ****/
-
-.burger {
-
-    cursor: pointer;
-    background: #fff;
-    border: none;
-    justify-self: end;
-    visibility: visible;
-    margin-left: 80vw;
-    margin-top: 2vw;
-
-}
-
-.bar1,
-.bar2,
-.bar3 {
-
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-nav {
-
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.6s;
-    margin-left: 15vw;
-    margin-top: -7vh;
-}
-
-.show {
-    max-height: 500px;
-}
-
-.change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/**** BURGERMENU SLUT ****/
+/**** TABLET MODE SLUT ****/

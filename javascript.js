@@ -1,11 +1,13 @@
 ///////// BURGERMENU START ////////
 
-function toggleMenu() {
-
-    document.querySelector(".burger").classList.toggle("change");
-    document.querySelector("nav").classList.toggle("show");
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
 }
-document.querySelector(".burger").addEventListener("click", toggleMenu);
-document.querySelector("nav").addEventListener("click", toggleMenu);
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+}
 
 ///////// BURGERMENU SLUT ////////
