@@ -1,3 +1,7 @@
+let pris;
+let alder = 1;
+let vaerdi = 500;
+
 ///////// BURGERMENU START ////////
 
 function openNav() {
@@ -15,15 +19,54 @@ function closeNav() {
 
 ///////// SLIDER/INFOGRAFIK START ////////
 
-document.querySelector("#myRange").addEventListener("input", visTal);
+document.querySelector("#myRange").addEventListener("input", visVaerdi);
+document.querySelector("#cykelAlder").addEventListener("input", visAlder);
+
+
+function visAlder() {
+
+    //alder
+    alder = this.value;
+    document.querySelector(".alder").textContent = alder;
+    visTal();
+}
+
+function visVaerdi() {
+    vaerdi = this.value;
+
+    document.querySelector(".value").textContent = vaerdi;
+
+    visTal();
+
+}
 
 function visTal() {
 
-    console.log(this.value);
+    pris = Math.round(vaerdi / (12.5 * alder));
+    //    console.log(this.value);
 
-    document.querySelector(".value").textContent = this.value;
-    document.querySelector(".pris").textContent = Math.round(this.value / 200);
 
+
+    document.querySelector(".pris").textContent = pris;
+    document.querySelector(".talCola").textContent = Math.round((pris / 15) * 100) / 100;
+    document.querySelector(".talGum").textContent = Math.round((pris / 0.5) * 100) / 100;
+    document.querySelector(".talIs").textContent = Math.round((pris / 8) * 100) / 100;
+    document.querySelector(".talPolse").textContent = Math.round((pris / 20) * 100) / 100;
 }
+
+
+//document.querySelector(".vidsteDu").addEventListener(".talCola", altEnheder);
+//
+//
+//function altEnheder() {
+//
+//    console.log(tal);
+//
+//    document.querySelector(".taltCola").textContent = pris / 15;
+//
+//    document.querySelector(".talCola").innerHTML = "35";
+//}
+
+
 
 ///////// SLIDER/INFOGRAFIK START ////////

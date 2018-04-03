@@ -36,6 +36,7 @@ body {
     width: 100%;
     height: 100px;
     background-color: #052951;
+
 }
 
 .box1 {
@@ -68,13 +69,12 @@ body {
 .box3 {
     width: 80%;
     height: 30vh;
-    border-style: dashed;
+
 }
 
 .tekstBox3 {
     width: 80%;
     height: 15vh;
-    border-style: dashed;
 }
 
 .navLogo {
@@ -146,6 +146,40 @@ span {
     top: -32px;
 }
 
+.sliderContainer {
+
+    width: 400px;
+    padding-top: 100px;
+    margin-left: 50px;
+}
+
+.value {
+    color: red;
+    position: relative;
+    left: -351px;
+    top: 3px;
+    font-size: 1.5em;
+    z-index: -1;
+}
+
+.pris {
+    color: red;
+    position: relative;
+    left: -351px;
+    top: 3px;
+    font-size: 1.5em;
+    z-index: -1;
+}
+
+.alder {
+    color: red;
+    position: relative;
+    left: -351px;
+    top: 3px;
+    font-size: 1.5em;
+    z-index: -1;
+}
+
 
 /**** BURGERMENU SLUT ****/
 
@@ -169,13 +203,112 @@ span {
 }
 
 
-/**** YOUTUBEVIDEOER START ****/
+/**** YOUTUBEVIDEOER SLUT ****/
+
+/**** OFFLINE REKLAMER START ****/
+
+.box1Oflline {
+
+    /*    margin-top: 100px;*/
+    width: 100%;
+    margin: auto auto 0 auto;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.box2Oflline {
+
+    width: 50%;
+    margin: 0px auto 0 auto;
+    height: 50%;
+
+}
+
+.box1 img {
+
+    width: 100%;
+    height: 300px;
+    margin: 64px auto;
+    padding: 2em 1em 2em 1em;
+    border: none;
+}
+
+.box2 img {
+
+    width: 100%;
+    height: 300px;
+    margin: 64px auto;
+    padding: 2em 1em 2em 1em;
+    border: none;
+}
+
+.tekstBox1Offline {
+
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+
+
+
+/**** OFFLINE REKLAMER SLUT ****/
+
+/**** INFOGRAFIK  START ****/
+
+.vidsteDu {
+
+    width: 90%;
+    margin-top: 100px;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+summary h3 {
+    cursor: pointer;
+}
+
+.infoCola {
+
+    width: 5%;
+    margin-left: 100px;
+}
+
+.infoGum {
+    width: 20%;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.infoIs {
+    width: 8%;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.infoPolse {
+    width: 8%;
+    margin-left: 100px;
+}
+
+.vidsteDu h4 {
+
+    position: relative;
+    top: 130px;
+    font-size: 2em;
+    z-index: -1;
+}
+
+/**** INFOGRAFIK  SLUT ****/
 
 /**** TABLET MODE START ****/
 
 @media screen and (min-width:768px) {
 
-    span {
+    .sideMenu {
 
         visibility: hidden;
     }
@@ -222,15 +355,145 @@ span {
 
     }
 
+    .sliderContainer {
+
+        width: 400px;
+        padding-top: 100px;
+        margin-left: 200px;
+    }
+
+    .value {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+    .pris {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+    .alder {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+
+
+    /**** OFFLINE REKLAMER START ****/
+    .box1Oflline {
+
+        margin-top: 100px;
+        width: 130%;
+        margin: -30px auto 0 auto;
+        height: 100%;
+    }
+
+    .box2Oflline {
+
+        width: 50%;
+        margin: 90px auto 0 auto;
+        height: 50%;
+
+    }
+
+    .box1 img {
+
+        width: 100%;
+        height: 300px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+    .box2 img {
+
+        width: 100%;
+        height: 300px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+    .tekstBox1Offline {
+
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-left: 50%;
+
+    }
+
+
+
+
+    /**** OFFLINE REKLAMER SLUT ****/
+    /**** YOUTUBEVIDEOER TABLET START ****/
+    .box1 iframe {
+
+        width: 100%;
+        height: 400px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 3em;
+        border: none;
+    }
+
+    .box2 iframe {
+        width: 100%;
+        height: 400px;
+        margin: -35px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+
+    /**** YOUTUBEVIDEOER TABLET SLUT ****/
+    .tekstBox1 {
+
+        position: relative;
+        top: 400px;
+        right: 50%;
+        z-index: -5;
+    }
+
+    .box2 {
+
+        position: relative;
+        top: -465px;
+        left: 50%;
+        z-index: -5;
+
+    }
+
+    .tekstBox2 {
+
+        position: relative;
+        top: -176px;
+        z-index: -5;
+    }
+
+
 }
+
+
+
+
 
 /**** TABLET MODE STOP ****/
 
-/**** DESKTOP MODE START ****/
+/**** LAPTOP MODE START ****/
 
 @media screen and (min-width:1024px) {
 
-    span {
+    .sideMenu {
 
         visibility: hidden;
     }
@@ -282,12 +545,121 @@ span {
         color: #00B9EA;
     }
 
+
     .sliderContainer {
 
-        border-style: dashed;
         width: 400px;
-        padding-top: 150px;
+        padding-top: 100px;
+        margin-left: 200px;
     }
+
+    .value {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+    .pris {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+    .alder {
+        color: red;
+        position: relative;
+        left: -351px;
+        top: 3px;
+        font-size: 2em;
+    }
+
+
+    /**** OFFLINE REKLAMER START ****/
+    .box1Oflline {
+
+        margin-top: 100px;
+        width: 130%;
+        margin: -30px auto 0 auto;
+        height: 100%;
+    }
+
+    .box2Oflline {
+
+        width: 50%;
+        margin: 90px auto 0 auto;
+        height: 50%;
+
+    }
+
+    .box1 img {
+
+        width: 100%;
+        height: 300px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+    .box2 img {
+
+        width: 100%;
+        height: 300px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+    .tekstBox1Offline {
+
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-left: 50%;
+
+    }
+
+
+
+
+    /**** OFFLINE REKLAMER SLUT ****/
+    /**** YOUTUBEVIDEOER TABLET START ****/
+    .box1 iframe {
+
+        width: 100%;
+        height: 400px;
+        margin: 64px auto;
+        padding: 2em 1em 2em 4em;
+        border: none;
+    }
+
+    .box2 iframe {
+        width: 100%;
+        height: 400px;
+        margin: -35px auto;
+        padding: 2em 1em 2em 1em;
+        border: none;
+    }
+
+
+    /**** YOUTUBEVIDEOER TABLET SLUT ****/
 }
 
-/**** DESKTOP MODE SLUT ****/
+/**** LAPTOP MODE SLUT ****/
+
+@media screen and (min-width:1786px) {
+
+    .buttonContainer {
+        visibility: visible;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-top: -58px;
+    }
+
+
+}
+
+/**** DESKTOP MODE START ****/

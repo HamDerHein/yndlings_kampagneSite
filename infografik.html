@@ -26,7 +26,7 @@
                 <a href="offline.html">Offline Kampagner</a>
             </div>
 
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="sideMenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 
             <div class="buttonContainer">
@@ -39,13 +39,35 @@
 
         </div>
     </header>
+    <div class="container">
+        <div class="sliderContainer">
+            <h2>Cyklens værdi: <br><span class="value">4000</span> kr.</h2>
+            <input type="range" min="500" max="10000" step="50" value="3000" id="myRange">
 
-    <div class="sliderContainer">
-        <h2>Cyklens værdi: <br><span class="value">4000</span> kr.</h2>
-        <input type="range" min="500" max="10000" step="50" value="3000" id="myRange">
+            <h2>Cyklens Alder: <br><span class="alder">2</span> måneder</h2>
+            <input type="range" min="1" max="120" step="2" value="18" id="cykelAlder">
 
-        <h2>Forsikringspris: <br><span class="pris">15</span> kr./md</h2>
+            <h2>Forsikringspris: <br><span class="pris">15</span> kr./md</h2>
+        </div>
+        <div class="vidsteDu">
+
+            <details>
+                <summary>
+                    <h3>Vidste du at? Klik Her!</h3>
+                </summary>
+                <p>
+                    Prisen på din forsikring svarer til:</p>
+                <h4 class="talCola">1</h4><img class="infoCola" src="infografik/cola.svg" alt="Yndlings Forsikring"><br>
+                <h4 class="talGum">1x</h4><img class="infoGum" src="infografik/gum.svg" alt="Yndlings Forsikring"><br>
+                <h4 class="talIs">1x</h4><img class="infoIs" src="infografik/ice.svg" alt="Yndlings Forsikring"><br>
+                <h4 class="talPolse">1x</h4><img class="infoPolse" src="infografik/polse.svg" alt="Yndlings Forsikring">
+            </details>
+
+        </div>
+
+
     </div>
+
 
 
     <footer class="footer"></footer>
