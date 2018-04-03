@@ -1,0 +1,80 @@
+HTML
+   <div id="scene">
+        <div id="skyer"></div>
+        <div id="skyer2"></div>
+   </div>
+
+/*----------SKYER----------*/
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    /* 9/16*100*/
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#skyer {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    animation-fill-mode: forwards;
+    background-image: url(image/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+
+    animation-name: skyer_kf1;
+    animation-duration: 340s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf1 {
+
+    0% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+#skyer2 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    animation-fill-mode: forwards;
+    background-image: url(image/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: -100vw;
+
+    animation-name: skyer_kf2;
+    animation-duration: 340s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf2 {
+
+    0% {
+        transform: translateX(0vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+/*----------BAGGRUND SLUT----------*/
