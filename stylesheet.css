@@ -1,3 +1,65 @@
+/*---------- FONTS START ----------*/
+
+a {
+    font-family: "Georgia, serif";
+}
+
+p {
+    font-family: "Georgia, serif";
+    font-size: 1.4em;
+}
+
+
+
+
+
+/*---------- FONTS SLUT ----------*/
+
+/*---------- FOOTER START ----------*/
+
+/*
+#forside footer {
+    position: absolute;
+    bottom: 0;
+}
+*/
+
+.logoer {
+
+    margin-left: 25vw;
+}
+
+
+.facebook {
+    padding: 4px;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.instagram {
+
+    padding: 0 10px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.youtube {
+    padding-left: 20px;
+    cursor: pointer;
+    width: 10%;
+}
+
+.copyright p {
+    width: 50;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+/*---------- FOTTER SLUT ----------*/
+
 body {
     margin: 0;
     background-color: #D5EDFA;
@@ -10,6 +72,7 @@ body {
     height: 70px;
     background-color: #F2F2F2;
     position: fixed;
+    z-index: 1;
 
 }
 
@@ -23,18 +86,10 @@ body {
     z-index: -1;
 }
 
-.logo {
-    width: 400px;
-    height: 100px;
-    background-color: green;
-    position: absolute;
-    top: 40vh;
-    left: 35vw;
-}
 
 .footer {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #052951;
 
 }
@@ -67,10 +122,17 @@ body {
 }
 
 .box3 {
-    width: 80%;
-    height: 30vh;
+    width: 90%;
+    height: 100%;
 
 }
+
+.box4 {
+    width: 90%;
+    height: 100%;
+
+}
+
 
 .tekstBox3 {
     width: 80%;
@@ -82,7 +144,7 @@ body {
     position: relative;
     top: 14px;
     left: 17px;
-    z-index: 3;
+    z-index: 200;
 }
 
 .middleLogo {
@@ -90,13 +152,269 @@ body {
 
 }
 
+/*---------- FORSIDE START ----------*/
+
+.logo {
+
+    position: absolute;
+    width: 40%;
+    z-index: -1;
+    top: 178px;
+    left: 30%;
+
+
+}
+
+
+#scene {
+    width: 100vw;
+    min-height: 84vh;
+
+    /* 9/16*100*/
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#Solskin {
+    position: absolute;
+    background-image: url(img/Sol-01.svg);
+    width: 40%;
+    height: 40%;
+    top: 71px;
+    right: -1%;
+    background-repeat: no-repeat;
+
+    animation-name: sol_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes sol_kf {
+
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#skyer {
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 105px;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+
+
+    animation-name: skyer_kf1;
+    animation-duration: 100s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf1 {
+
+    0% {
+        transform: translateX(20vw);
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+#skyer2 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 300px;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: absolute;
+    /*    left: -100vw;*/
+    animation-name: skyer_kf2;
+    animation-duration: 100s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf2 {
+
+    0% {
+        transform: translateX(5vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+
+#skyer3 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 400px;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: absolute;
+    /*    left: -100vw;*/
+    animation-name: skyer_kf3;
+    animation-duration: 90s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf3 {
+
+    0% {
+        transform: translateX(10vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+#skyer4 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 300px;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: absolute;
+    /*    left: -100vw;*/
+    animation-name: skyer_kf4;
+    animation-duration: 90s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf4 {
+
+    0% {
+        transform: translateX(-150vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+#skyer5 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 110px;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    position: absolute;
+    /*    left: -100vw;*/
+    animation-name: skyer_kf5;
+    animation-duration: 90s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf5 {
+
+    0% {
+        transform: translateX(-150vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+#skyer6 {
+    z-index: 1;
+    width: 87.1vw;
+    height: 5.8vw;
+    top: 110px;
+    left: -100vw;
+    animation-fill-mode: forwards;
+    background-image: url(img/Skyer.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    /*    left: -100vw;*/
+    animation-name: skyer_kf6;
+    animation-duration: 100s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes skyer_kf6 {
+
+    0% {
+        transform: translateX(-200vw)
+    }
+
+    100% {
+        transform: translatex(100vw);
+    }
+
+
+}
+
+
+
+/*---------- FORSIDE SLUT----------*/
+
 /**** BURGERMENU START ****/
 
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #F2F2F2;
@@ -200,8 +518,26 @@ span {
     margin: -35px auto;
     padding: 2em 1em 2em 0em;
     border: none;
+    margin-top: 50px;
 }
 
+.box3 iframe {
+
+    width: 100%;
+    height: 300px;
+    padding: 8em 1em 2em 1.1em;
+    border: none;
+
+}
+
+.box4 iframe {
+
+    width: 100%;
+    height: 300px;
+    padding: 2em 1em 2em 1.1em;
+    border: none;
+
+}
 
 /**** YOUTUBEVIDEOER SLUT ****/
 
@@ -213,7 +549,8 @@ span {
     width: 100%;
     margin: auto auto 0 auto;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 68px;
+
 }
 
 .box2Oflline {
@@ -263,6 +600,10 @@ span {
     margin-top: 100px;
 }
 
+.vidsteDu summary:hover {
+    font-size: 110%;
+}
+
 details summary::-webkit-details-marker {
     display: none;
 }
@@ -280,29 +621,181 @@ summary h3 {
 .infoGum {
     width: 20%;
     margin-left: 100px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .infoIs {
     width: 8%;
     margin-left: 100px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .infoPolse {
     width: 8%;
     margin-left: 100px;
+    padding-bottom: 100px;
 }
 
 .vidsteDu h4 {
 
     position: relative;
-    top: 130px;
+    top: 100px;
     font-size: 2em;
     z-index: -1;
+    padding: 5px;
 }
 
+.talGum {
+    margin-top: -10px;
+}
+
+
+
+
+
+
+input[type=range] {
+    height: 34px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 70%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 11px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #052951;
+    background: #00B9EA;
+    border-radius: 1px;
+    border: 0px solid #052951;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #052951;
+    border: 1px solid #052951;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #E10E49;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #00B9EA;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 11px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #00B9EA;
+    background: #00B9EA;
+    border-radius: 1px;
+    border: 0px solid #010101;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #00B9EA;
+    border: 1px solid #052951;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #00B9EA;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 11px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #00B9EA;
+    border-color: #00B9EA;
+    color: #00B9EA;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #00B9EA;
+    border: 0px solid #00B9EA;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #00B9EA;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #00B9EA;
+    border: 0px solid #00B9EA;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #00B9EA;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #00B9EA;
+    border: 1px solid #00B9EA;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #00B9EA;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #00B9EA;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #00B9EA;
+}
+
+
+
+
+
+
+
 /**** INFOGRAFIK  SLUT ****/
+
+/**** SOME  START ****/
+
+.box1some {
+    width: 100%;
+    padding: 3em 2em 1em 3em;
+}
+
+.box2some {
+    width: 100%;
+    padding: 0em 2em 1em 3em;
+
+}
+
+.box3some {
+    width: 100%;
+    padding: 0em 2em 1em 3em;
+}
+
+.tekstBox3some {
+    padding: 5px;
+}
+
+
+.box2some p {
+
+    width: 36vw;
+    font-size: 0.7em;
+    margin-top: -35px;
+    margin-left: 68px;
+}
+
+/**** SOME  SLUT ****/
 
 /**** TABLET MODE START ****/
 
@@ -395,6 +888,9 @@ summary h3 {
         width: 130%;
         margin: -30px auto 0 auto;
         height: 100%;
+        padding-top: 92px;
+
+
     }
 
     .box2Oflline {
@@ -412,6 +908,7 @@ summary h3 {
         margin: 64px auto;
         padding: 2em 1em 2em 1em;
         border: none;
+
     }
 
     .box2 img {
@@ -437,11 +934,18 @@ summary h3 {
 
     /**** OFFLINE REKLAMER SLUT ****/
     /**** YOUTUBEVIDEOER TABLET START ****/
+    .container2 {
+
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-gap: 5px;
+    }
+
     .box1 iframe {
 
         width: 100%;
         height: 400px;
-        margin: 64px auto;
+        margin: 64px auto 0 auto;
         padding: 2em 1em 2em 3em;
         border: none;
     }
@@ -449,9 +953,40 @@ summary h3 {
     .box2 iframe {
         width: 100%;
         height: 400px;
-        margin: -35px auto;
+        margin: -35px auto 0 auto;
         padding: 2em 1em 2em 1em;
         border: none;
+        padding-top:
+    }
+
+    .box3 iframe {
+        height: 400px;
+
+    }
+
+    .box3 {
+        width: 45.5%;
+        height: 400px;
+        margin-top: -13%;
+        padding-bottom: 20%;
+        margin-left: 3%;
+
+
+    }
+
+    .box4 {
+        width: 45.5%;
+        height: 400px;
+        margin-top: -44%;
+        padding-bottom: 20%;
+        margin-left: 51.5%;
+        margin-top: -494px;
+
+
+    }
+
+    .box4 iframe {
+        height: 400px;
     }
 
 
@@ -467,8 +1002,8 @@ summary h3 {
     .box2 {
 
         position: relative;
-        top: -465px;
-        left: 50%;
+        top: 189px;
+        left: -1%;
         z-index: -5;
 
     }
@@ -481,8 +1016,94 @@ summary h3 {
     }
 
 
-}
+    input[type=range] {
+        height: 34px;
+        -webkit-appearance: none;
+        margin: 10px 0;
+        width: 100%;
+    }
 
+    /**** SOME TABLET START ****/
+    .someContainer {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px;
+    }
+
+    .box1some {
+        padding: 3em 1em 1em 2em;
+    }
+
+    .box2some {
+        margin-left: -70px;
+        padding: 3em 1em 1em 2em;
+    }
+
+    .box3some {
+        margin-left: -100px;
+        padding: 3em 1em 1em 2em;
+    }
+
+    .tekstBox3some {
+        padding: 5px;
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    .box2some p {
+        width: 17vw;
+        margin-top: -35px;
+        margin-left: 79px;
+    }
+
+
+    /**** SOME TABLET SLUT ****/
+    .logoer {
+
+        margin-left: 30vw;
+    }
+
+
+    .facebook {
+        padding: 4px;
+        padding-right: 60px;
+        cursor: pointer;
+        width: 9%;
+    }
+
+    .instagram {
+
+        padding: 0 30px;
+        cursor: pointer;
+        width: 9%;
+    }
+
+    .youtube {
+        padding-left: 60px;
+        cursor: pointer;
+        width: 9%;
+    }
+
+    .copyright {
+        margin-left: 27%;
+    }
+
+    .copyright p {
+        width: 50vw;
+        padding: 0;
+    }
+
+    /**** FORSIDE TABLET START ****/
+    #Solskin {
+        right: -14%;
+    }
+
+
+
+    /**** FORSIDE TABLET START ****/
+}
 
 
 
@@ -503,12 +1124,14 @@ summary h3 {
         margin: 0 auto;
         margin-right: 0;
         margin-top: -87px;
+        z-index: 100;
     }
 
     .navigation {
         position: fixed;
         display: flex;
         flex-wrap: wrap;
+        z-index: 100;
 
     }
 
@@ -535,10 +1158,10 @@ summary h3 {
         display: inline-block;
         font-size: 25px;
         position: relative;
-        z-index: 2;
         top: 5px;
         margin: 0 auto;
         cursor: pointer;
+        z-index: 100;
     }
 
     .buttonContainer a:hover {
@@ -583,8 +1206,10 @@ summary h3 {
 
         margin-top: 100px;
         width: 130%;
-        margin: -30px auto 0 auto;
+        margin: 39px auto 0 auto;
         height: 100%;
+        padding-top: 2px;
+
     }
 
     .box2Oflline {
@@ -644,8 +1269,56 @@ summary h3 {
         border: none;
     }
 
+    .box4 {
+        margin-top: -565px;
+    }
 
-    /**** YOUTUBEVIDEOER TABLET SLUT ****/
+    /**** YOUTUBEVIDEOER DESKTOP SLUT ****/
+    /**** SOME LAPTOP START ****/
+    .box2some p {
+
+        width: 12vw;
+        margin-top: -35px;
+        margin-left: 70px;
+
+    }
+
+    /**** SOME LAPTOP SLUT ****/
+    .logoer {
+
+        margin-left: 40vw;
+    }
+
+
+    .copyright {
+        margin-left: 31%;
+        margin-top: -13px;
+    }
+
+    .copyright p {
+        width: 70%;
+        padding: 2px;
+        text-align: center;
+        color: white;
+        font-size: 0.8em;
+    }
+
+
+    .facebook {
+        width: 8%;
+    }
+    .instagram {
+        width: 8%;
+    }
+    .youtube {
+        width: 8%;
+    }
+
+    #Solskin {
+        right: -24%;
+    }
+
+
 }
 
 /**** LAPTOP MODE SLUT ****/

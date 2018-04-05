@@ -54,19 +54,4 @@ function visTal() {
     document.querySelector(".talPolse").textContent = Math.round((pris / 20) * 100) / 100;
 }
 
-
-//document.querySelector(".vidsteDu").addEventListener(".talCola", altEnheder);
-//
-//
-//function altEnheder() {
-//
-//    console.log(tal);
-//
-//    document.querySelector(".taltCola").textContent = pris / 15;
-//
-//    document.querySelector(".talCola").innerHTML = "35";
-//}
-
-
-
-///////// SLIDER/INFOGRAFIK START ////////
+///////// SLIDER/INFOGRAFIK SLUT ////////

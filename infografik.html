@@ -58,9 +58,9 @@
                 <p>
                     Prisen på din forsikring svarer til:</p>
                 <h4 class="talCola">1</h4><img class="infoCola" src="infografik/cola.svg" alt="Yndlings Forsikring"><br>
-                <h4 class="talGum">1x</h4><img class="infoGum" src="infografik/gum.svg" alt="Yndlings Forsikring"><br>
-                <h4 class="talIs">1x</h4><img class="infoIs" src="infografik/ice.svg" alt="Yndlings Forsikring"><br>
-                <h4 class="talPolse">1x</h4><img class="infoPolse" src="infografik/polse.svg" alt="Yndlings Forsikring">
+                <h4 class="talGum">30</h4><img class="infoGum" src="infografik/gum.svg" alt="Yndlings Forsikring"><br>
+                <h4 class="talIs">2</h4><img class="infoIs" src="infografik/ice.svg" alt="Yndlings Forsikring"><br>
+                <h4 class="talPolse">0.5</h4><img class="infoPolse" src="infografik/polse.svg" alt="Yndlings Forsikring">
             </details>
 
         </div>
@@ -70,11 +70,77 @@
 
 
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="logoer">
+
+            <a href="https://www.facebook.com/Yndlings.dk/" target="_blank"><img class="facebook" src="img/facebook_icon_white.svg" alt="Forsikring Yndlings"></a>
+            <a href="https://www.instagram.com/yndlings.dk/?hl=da" target="_blank"><img class="instagram" src="img/instagram_icon_white.svg" alt="Forsikring Yndlings"></a>
+            <a href="https://www.youtube.com/channel/UCBaID3SowOjYEhUC7fv6zZQ" target="_blank"><img class="youtube" src="img/youtube_icon_white.svg" alt="Forsikring Yndlings"></a></div>
+        <div class="copyright">
+            <p>Yndlings er udviklet af Alm. Brand Forsikring A/S Copyright © 2018</p>
+        </div>
+
+    </footer>
+
+    <script>
+        let pris;
+        let alder = 1;
+        let vaerdi = 500;
+
+        ///////// BURGERMENU START ////////
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight = "0";
+        }
+
+        ///////// BURGERMENU SLUT ////////
+
+
+        ///////// SLIDER/INFOGRAFIK START ////////
+
+        document.querySelector("#myRange").addEventListener("input", visVaerdi);
+        document.querySelector("#cykelAlder").addEventListener("input", visAlder);
+
+
+        function visAlder() {
+
+            //alder
+            alder = this.value;
+            document.querySelector(".alder").textContent = alder;
+            visTal();
+        }
+
+        function visVaerdi() {
+            vaerdi = this.value;
+
+            document.querySelector(".value").textContent = vaerdi;
+
+            visTal();
+
+        }
+
+        function visTal() {
+
+            pris = Math.round(vaerdi / (12.5 * alder));
+            //    console.log(this.value);
 
 
 
-    <script src="javascript.js"></script>
+            document.querySelector(".pris").textContent = pris;
+            document.querySelector(".talCola").textContent = Math.round((pris / 15) * 100) / 100;
+            document.querySelector(".talGum").textContent = Math.round((pris / 0.5) * 100) / 100;
+            document.querySelector(".talIs").textContent = Math.round((pris / 8) * 100) / 100;
+            document.querySelector(".talPolse").textContent = Math.round((pris / 20) * 100) / 100;
+        }
+
+        ///////// SLIDER/INFOGRAFIK SLUT ////////
+    </script>
 </body>
 
 </html>
