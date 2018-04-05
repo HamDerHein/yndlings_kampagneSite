@@ -669,7 +669,6 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 11px;
     cursor: pointer;
-    animate: 0.2s;
     box-shadow: 1px 1px 1px #052951;
     background: #00B9EA;
     border-radius: 1px;
@@ -696,7 +695,6 @@ input[type=range]::-moz-range-track {
     width: 100%;
     height: 11px;
     cursor: pointer;
-    animate: 0.2s;
     box-shadow: 1px 1px 1px #00B9EA;
     background: #00B9EA;
     border-radius: 1px;
@@ -717,7 +715,6 @@ input[type=range]::-ms-track {
     width: 100%;
     height: 11px;
     cursor: pointer;
-    animate: 0.2s;
     background: #00B9EA;
     border-color: #00B9EA;
     color: #00B9EA;
